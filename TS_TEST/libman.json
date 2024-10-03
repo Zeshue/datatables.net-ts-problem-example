@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition
+      "library": "datatables.net@2.1.6",
+      "destination": "wwwroot/lib/datatables.net/"
+    },
+    {
+      "library": "datatables.net-bs5@2.1.6",
+      "destination": "wwwroot/lib/datatables.net-bs5/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition
+      "library": "datatables.net-select@2.0.5", //2.1.0 imports ObjectColumnRender from datatables.net which does not export it
+      "destination": "wwwroot/lib/datatables.net-select/"
+    },
+    {
+      "library": "datatables.net-select-bs5@2.1.0",
+      "destination": "wwwroot/lib/datatables.net-select-bs5/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition
+      "library": "datatables.net-fixedcolumns@5.0.2",
+      "destination": "wwwroot/lib/datatables.net-fixedcolumns/"
+    },
+    {
+      "library": "datatables.net-buttons-bs5@3.1.2",
+      "destination": "wwwroot/lib/datatables.net-buttons-bs5/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition (broken for 3.1.2)
+      "library": "datatables.net-buttons@3.1.1",
+      "destination": "wwwroot/lib/datatables.net-buttons/"
+    },
+    {
+      "library": "datatables.net-colreorder-bs5@2.0.4",
+      "destination": "wwwroot/lib/datatables.net-colreorder-bs5/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition
+      "library": "datatables.net-colreorder@2.0.4",
+      "destination": "wwwroot/lib/datatables.net-colreorder/"
+    },
+    {
+      "provider": "jsdelivr", //Adds type definition
+      "library": "datatables.net-fixedheader@4.0.1",
+      "destination": "wwwroot/lib/datatables.net-fixedheader/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "@types/jquery@3.5.30",
+      "destination": "wwwroot/lib/types/jquery/"
+    },
+    {
+      //jQuery dependency
+      "provider": "jsdelivr",
+      "library": "@types/sizzle@2.3.8",
+      "destination": "wwwroot/lib/types/sizzle/"
+    }
+  ]
+}
