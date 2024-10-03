@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "ES2022",
+    "outDir": "wwwroot/js",
+    "baseUrl": ".",
+    "module": "None",
+    "moduleResolution": "Node", //Required for resolving @popperjs/core
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      //"DOM.AsyncIterable",
+      "ES2022"
+    ],
+    "typeRoots": [
+      "wwwroot/lib/types",
+      "wwwroot/lib" //Used for datatables.net references since they are outside of the types folder
+    ],
+    "types": [
+      "jquery",
+      "datatables.net",
+      "datatables.net-buttons", //Removing fixes Maximum call stack size exceeded error
+      "datatables.net-colreorder", //Removing fixes Maximum call stack size exceeded error
+      "datatables.net-fixedcolumns",
+      "datatables.net-select",
+      "datatables.net-fixedheader" //Removing fixes Maximum call stack size exceeded error
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot/lib"
+  ],
+  "include": [ "wwwroot/src/**/*" ],
+  "compileOnSave": true
+}
